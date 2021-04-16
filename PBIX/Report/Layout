@@ -220,7 +220,7 @@
                                 [
                                   {
                                     "Literal": {
-                                      "Value": "'Austria'"
+                                      "Value": "'Belarus'"
                                     }
                                   }
                                 ]
@@ -509,7 +509,7 @@
                                       [
                                         {
                                           "Literal": {
-                                            "Value": "'Austria'"
+                                            "Value": "'Belarus'"
                                           }
                                         }
                                       ]
@@ -666,7 +666,7 @@
                                     [
                                       {
                                         "Literal": {
-                                          "Value": "'Austria'"
+                                          "Value": "'Belarus'"
                                         }
                                       }
                                     ]
@@ -707,26 +707,8 @@
                   }
                 ]
               },
-              "queryMetadata": {
-                "Select": [
-                  {
-                    "Restatement": "Country",
-                    "Name": "GDP Countries.Country",
-                    "Type": 2048
-                  }
-                ]
-              },
-              "visualElements": [
-                {
-                  "DataRoles": [
-                    {
-                      "Name": "Values",
-                      "Projection": 0,
-                      "isActive": true
-                    }
-                  ]
-                }
-              ],
+              "queryMetadata": null,
+              "visualElements": null,
               "selects": [
                 {
                   "displayName": "Country",
@@ -919,7 +901,7 @@
                                 [
                                   {
                                     "Literal": {
-                                      "Value": "'Austria'"
+                                      "Value": "'Belarus'"
                                     }
                                   }
                                 ]
@@ -1057,7 +1039,7 @@
         },
         {
           "x": 640,
-          "y": 334.54545454545456,
+          "y": 218.1818181818182,
           "z": 3000,
           "width": 640,
           "height": 231.51515151515153,
@@ -1069,7 +1051,7 @@
                   "id": 0,
                   "position": {
                     "x": 640,
-                    "y": 334.54545454545456,
+                    "y": 218.1818181818182,
                     "z": 3000,
                     "width": 640,
                     "height": 231.51515151515153
@@ -1253,7 +1235,7 @@
                                 [
                                   {
                                     "Literal": {
-                                      "Value": "'Austria'"
+                                      "Value": "'Belarus'"
                                     }
                                   }
                                 ]
@@ -1428,6 +1410,381 @@
                         }
                       },
                       "Property": "country"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 450,
+          "z": 4000,
+          "width": 640,
+          "height": 270,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "caa233208bad6c7e7a5e",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 640,
+                    "y": 450,
+                    "width": 640,
+                    "height": 270,
+                    "z": 4000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "stackedAreaChart",
+                "projections": {
+                  "Category": [
+                    {
+                      "queryRef": "GDP Countries.Year",
+                      "active": true
+                    }
+                  ],
+                  "Series": [
+                    {
+                      "queryRef": "GDP Countries.Country"
+                    }
+                  ],
+                  "Y": [
+                    {
+                      "queryRef": "Sum(GDP Countries.GDP Growth)"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "g",
+                      "Entity": "GDP Countries",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "g"
+                          }
+                        },
+                        "Property": "Year"
+                      },
+                      "Name": "GDP Countries.Year"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "g"
+                          }
+                        },
+                        "Property": "Country"
+                      },
+                      "Name": "GDP Countries.Country"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "g"
+                              }
+                            },
+                            "Property": "GDP Growth"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(GDP Countries.GDP Growth)"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "g"
+                                }
+                              },
+                              "Property": "GDP Growth"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "g",
+                          "Entity": "GDP Countries",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "g"
+                              }
+                            },
+                            "Property": "Year"
+                          },
+                          "Name": "GDP Countries.Year"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "g"
+                              }
+                            },
+                            "Property": "Country"
+                          },
+                          "Name": "GDP Countries.Country"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "g"
+                                  }
+                                },
+                                "Property": "GDP Growth"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(GDP Countries.GDP Growth)"
+                        }
+                      ],
+                      "Where": [
+                        {
+                          "Condition": {
+                            "In": {
+                              "Expressions": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g"
+                                      }
+                                    },
+                                    "Property": "Country"
+                                  }
+                                }
+                              ],
+                              "Values": [
+                                [
+                                  {
+                                    "Literal": {
+                                      "Value": "'Belarus'"
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              2
+                            ]
+                          }
+                        ]
+                      },
+                      "Secondary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              1
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 4,
+                        "Primary": {
+                          "Sample": {}
+                        },
+                        "Secondary": {
+                          "Top": {}
+                        }
+                      },
+                      "Version": 1
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "projectionOrdering": {
+                "Category": [
+                  0
+                ],
+                "Series": [
+                  1
+                ],
+                "Y": [
+                  2
+                ]
+              },
+              "projectionActiveItems": {
+                "Category": [
+                  {
+                    "queryRef": "GDP Countries.Year",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Year",
+                    "Name": "GDP Countries.Year",
+                    "Type": 3,
+                    "Format": "0"
+                  },
+                  {
+                    "Restatement": "Country",
+                    "Name": "GDP Countries.Country",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "GDP Growth",
+                    "Name": "Sum(GDP Countries.GDP Growth)",
+                    "Type": 1
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Category",
+                      "Projection": 0,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Series",
+                      "Projection": 1,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 2,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Year",
+                  "format": "0",
+                  "queryName": "GDP Countries.Year",
+                  "roles": {
+                    "Category": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "GDP Countries"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Country",
+                  "queryName": "GDP Countries.Country",
+                  "roles": {
+                    "Series": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "GDP Countries"
+                        }
+                      },
+                      "Property": "Country"
+                    }
+                  }
+                },
+                {
+                  "displayName": "GDP Growth",
+                  "queryName": "Sum(GDP Countries.GDP Growth)",
+                  "roles": {
+                    "Y": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "GDP Countries"
+                            }
+                          },
+                          "Property": "GDP Growth"
+                        }
+                      },
+                      "Function": 0
                     }
                   }
                 }
