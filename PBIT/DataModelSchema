@@ -1,0 +1,905 @@
+{
+  "name": "14c9dfb4-246b-450d-b911-9fd152e7f3ee",
+  "compatibilityLevel": 1540,
+  "createdTimestamp": "2021-04-15T15:54:18.44-03:00",
+  "lastUpdate": "2021-04-16T14:16:55.073333-03:00",
+  "lastSchemaUpdate": "2021-04-15T15:54:18.44-03:00",
+  "lastProcessed": "2021-04-15T17:29:48.006667-03:00",
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "modifiedTime": "2021-04-15T18:55:09.006667",
+    "structureModifiedTime": "2021-04-15T20:22:16.12",
+    "tables": [
+      {
+        "name": "GDP Countries",
+        "lineageTag": "b100239a-baf0-4290-bb82-3ab411826bfe",
+        "modifiedTime": "2021-04-15T19:06:22.116667",
+        "structureModifiedTime": "2021-04-15T19:08:05.42",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2021-04-15T19:01:13.81",
+            "structureModifiedTime": "2021-04-15T19:01:13.8",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:18.32",
+              "refreshedTime": "2021-04-15T20:29:48.026667"
+            }
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "lineageTag": "2415135b-8337-4af4-b26d-97c6a4d245ab",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.336667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.89",
+              "refreshedTime": "2021-04-15T20:29:48.026667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.336667"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2021-04-15T19:06:22.336667"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.373333"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Country",
+                "modifiedTime": "2021-04-15T19:06:22.373333"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          },
+          {
+            "name": "Code",
+            "dataType": "string",
+            "sourceColumn": "Code",
+            "lineageTag": "36261e1c-af96-4bbe-a44b-72dc66310f6a",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.373333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.89",
+              "refreshedTime": "2021-04-15T20:29:48.02"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.373333"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2021-04-15T19:06:22.373333"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.39"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Code",
+                "modifiedTime": "2021-04-15T19:06:22.39"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "formatString": "0",
+            "lineageTag": "e644b8b5-cad8-409c-a88a-52910f98a287",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.39",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.906667",
+              "refreshedTime": "2021-04-15T20:29:48.026667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.39"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:06:22.39"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.403333"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Year",
+                "modifiedTime": "2021-04-15T19:06:22.403333"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          },
+          {
+            "name": "GDP Growth",
+            "dataType": "double",
+            "sourceColumn": "GDP Growth",
+            "lineageTag": "97c77f6e-a1fa-46a3-ac65-c7ab4fef8496",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.403333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.89",
+              "refreshedTime": "2021-04-15T20:29:48.03"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.403333"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />",
+                "modifiedTime": "2021-04-15T19:06:22.403333"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.42"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GDP Growth",
+                "modifiedTime": "2021-04-15T19:06:22.42"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          },
+          {
+            "name": "GDP-Per-Capita",
+            "dataType": "double",
+            "sourceColumn": "GDP-Per-Capita",
+            "lineageTag": "0430f4fa-b699-4749-bdc8-69f3653de808",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.42",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.906667",
+              "refreshedTime": "2021-04-15T20:29:48.026667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.42"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />",
+                "modifiedTime": "2021-04-15T19:06:22.42"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.436667"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GDP-Per-Capita",
+                "modifiedTime": "2021-04-15T19:06:22.436667"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          },
+          {
+            "name": "GDP",
+            "dataType": "double",
+            "sourceColumn": "GDP",
+            "lineageTag": "1908336c-cf90-433c-8e8a-34527c3413f6",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:06:22.47",
+            "structureModifiedTime": "2021-04-15T19:06:22.436667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:06:22.89",
+              "refreshedTime": "2021-04-15T20:29:48.026667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:06:22.436667"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />",
+                "modifiedTime": "2021-04-15T19:06:22.436667"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GDP",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:06:22.47"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "GDP Countries-99f47b1a-c569-455c-b31f-0f08f22aa7e3",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2021-04-15T19:08:05.42",
+            "refreshedTime": "2021-04-15T20:29:48.006667",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Excel.Workbook(File.Contents(\"C:\\Users\\hiram\\Desktop\\PowerBI Learn\\Mini+Project+Data\\gdp_data.xlsx\"), null, true),\n    gdp_data_Sheet = Source{[Item=\"gdp_data\",Kind=\"Sheet\"]}[Data],\n    #\"Promoted Headers\" = Table.PromoteHeaders(gdp_data_Sheet, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Content#(lf)The data represents GDP (2010 USD), GDP Growth (%), and GDP Per Capita (2010 USD) from 1960 to 2016.#(lf)\", type text}, {\"#(lf)Acknowledgements#(lf)All data taken from the World Bank Group.\", type text}, {\"Column3\", type text}, {\"Column4\", type any}, {\"Column5\", type any}, {\"Column6\", type any}, {\"Column7\", type any}}),\n    #\"Promoted Headers1\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),\n    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers1\",{{\"Country\", type text}, {\"Code\", type text}, {\"Year\", Int64.Type}, {\"GDP-Growth\", type number}, {\"GDP-Per-Capita\", type number}, {\"GDP\", type number}, {\"Column7\", type any}}),\n    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"GDP-Growth\", \"GDP Growth\"}}),\n    #\"Removed Blank Rows\" = Table.SelectRows(#\"Renamed Columns\", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {\"\", null}))),\n    #\"Removed Columns\" = Table.RemoveColumns(#\"Removed Blank Rows\",{\"Column7\"})\nin\n    #\"Removed Columns\""
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh",
+            "modifiedTime": "2021-04-15T19:01:14.876667"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2021-04-15T19:01:14.876667"
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_942bc332-000d-411a-8f60-00b41217ce96",
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "b8609d91-c424-4f19-a99c-a1b1db21b0a7",
+        "modifiedTime": "2021-04-15T19:01:14.88",
+        "structureModifiedTime": "2021-04-15T19:01:13.806667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2021-04-15T19:01:13.81",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.04",
+              "refreshedTime": "2021-04-15T19:01:15.04"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "ced28447-14bf-462f-b23d-7862b9e57edb",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.026667",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.03",
+              "refreshedTime": "2021-04-15T19:01:15.03"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1046\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Year",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "93d7edd7-43e2-48fc-9048-5a4e6017560b",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.033333",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.033333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.036667",
+              "refreshedTime": "2021-04-15T19:01:15.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "d06ac31e-b3a1-4508-b97f-d933c86ec289",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.033333",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.033333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.036667",
+              "refreshedTime": "2021-04-15T19:01:15.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Month",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "fd3bea47-18d7-4011-aa6c-f10d00e264d1",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.033333",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.033333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.036667",
+              "refreshedTime": "2021-04-15T19:01:15.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "060278b6-e07d-4afc-ab32-dea627655310",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.036667",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.036667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.036667",
+              "refreshedTime": "2021-04-15T19:01:15.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Quarter",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "70376385-e656-4bbf-af53-4e17242e5e40",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.04",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.04",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.04",
+              "refreshedTime": "2021-04-15T19:01:15.04"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Day",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "6ac2616f-033f-4e44-b9a5-d3e3ffddc233",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:01:15.033333",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.033333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:01:15.036667",
+              "refreshedTime": "2021-04-15T19:01:15.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:01:14.876667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DateTableTemplate_942bc332-000d-411a-8f60-00b41217ce96-9c019fcf-678f-4c89-8686-16817027e5fc",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2021-04-15T19:01:15.026667",
+            "refreshedTime": "2021-04-15T19:01:15.026667",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "lineageTag": "6066ba24-f548-496d-9a38-20557bc19021",
+            "state": "ready",
+            "modifiedTime": "2021-04-15T19:01:15.053333",
+            "structureModifiedTime": "2021-04-15T19:01:13.806667",
+            "refreshedTime": "2021-04-15T19:01:15.053333",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year",
+                "lineageTag": "b79056fb-b294-410f-adcf-fa87a5a11ca2",
+                "modifiedTime": "2021-04-15T19:01:14.88"
+              },
+              {
+                "name": "Quarter",
+                "ordinal": 1,
+                "column": "Quarter",
+                "lineageTag": "13213957-654d-4a11-a4a4-05a912bbf86c",
+                "modifiedTime": "2021-04-15T19:01:14.88"
+              },
+              {
+                "name": "Month",
+                "ordinal": 2,
+                "column": "Month",
+                "lineageTag": "a45779ef-940a-4e90-beff-6e2afed822f5",
+                "modifiedTime": "2021-04-15T19:01:14.88"
+              },
+              {
+                "name": "Day",
+                "ordinal": 3,
+                "column": "Day",
+                "lineageTag": "53024343-c8c8-4cc8-bce0-6d780c9281c2",
+                "modifiedTime": "2021-04-15T19:01:14.88"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2021-04-15T19:01:13.81"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true",
+            "modifiedTime": "2021-04-15T19:01:13.81"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy",
+            "modifiedTime": "2021-04-15T19:01:13.81"
+          }
+        ]
+      },
+      {
+        "name": "life_expectancy_years",
+        "lineageTag": "b9d745c4-a900-498f-a6d6-43700c4ccbb1",
+        "modifiedTime": "2021-04-15T19:33:08.066667",
+        "structureModifiedTime": "2021-04-15T19:33:08.066667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2021-04-15T19:33:08.066667",
+            "structureModifiedTime": "2021-04-15T19:33:08.066667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:33:08.416667",
+              "refreshedTime": "2021-04-15T20:29:47.913333"
+            }
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "lineageTag": "a4a5198d-22be-40d9-9d09-51782755a40f",
+            "summarizeBy": "none",
+            "modifiedTime": "2021-04-15T19:33:08.066667",
+            "structureModifiedTime": "2021-04-15T19:33:08.066667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:33:08.416667",
+              "refreshedTime": "2021-04-15T20:29:47.93"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "country",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "formatString": "0",
+            "lineageTag": "579a5894-6e0d-4f54-8c49-1d81985054d5",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:33:08.066667",
+            "structureModifiedTime": "2021-04-15T19:33:08.066667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:33:08.416667",
+              "refreshedTime": "2021-04-15T20:29:47.93"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Year",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              }
+            ]
+          },
+          {
+            "name": "Life Exp",
+            "dataType": "double",
+            "sourceColumn": "Life Exp",
+            "lineageTag": "34d03dd3-a62f-4e17-83f0-e6e96e51b8d6",
+            "summarizeBy": "sum",
+            "modifiedTime": "2021-04-15T19:33:08.066667",
+            "structureModifiedTime": "2021-04-15T19:33:08.066667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2021-04-15T19:33:08.416667",
+              "refreshedTime": "2021-04-15T20:29:47.93"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Life Exp",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2021-04-15T19:33:08.066667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "life_expectancy_years-6bdaf988-bac7-4f50-a3ca-27b0cfae5c35",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2021-04-15T19:33:08.413333",
+            "refreshedTime": "2021-04-15T20:29:47.846667",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Excel.Workbook(File.Contents(\"C:\\Users\\hiram\\Desktop\\PowerBI Learn\\Mini+Project+Data\\life_expectancy_years.xlsx\"), null, true),\n    life_expectancy_years_Sheet = Source{[Item=\"life_expectancy_years\",Kind=\"Sheet\"]}[Data],\n    #\"Promoted Headers\" = Table.PromoteHeaders(life_expectancy_years_Sheet, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Based on free material from GAPMINDER.ORG, CC-BY LICENSE\", type text}, {\"Column2\", type number}, {\"Column3\", type number}, {\"Column4\", type number}, {\"Column5\", type number}, {\"Column6\", type number}, {\"Column7\", type number}, {\"Column8\", type number}, {\"Column9\", type number}, {\"Column10\", type number}, {\"Column11\", type number}, {\"Column12\", type number}, {\"Column13\", type number}, {\"Column14\", type number}, {\"Column15\", type number}, {\"Column16\", type number}, {\"Column17\", type number}, {\"Column18\", type number}, {\"Column19\", type number}, {\"Column20\", type number}, {\"Column21\", type number}, {\"Column22\", type number}, {\"Column23\", type number}, {\"Column24\", type number}, {\"Column25\", type number}, {\"Column26\", type number}, {\"Column27\", type number}, {\"Column28\", type number}, {\"Column29\", type number}, {\"Column30\", type number}, {\"Column31\", type number}, {\"Column32\", type number}, {\"Column33\", type number}, {\"Column34\", type number}, {\"Column35\", type number}, {\"Column36\", type number}, {\"Column37\", type number}, {\"Column38\", type number}, {\"Column39\", type number}, {\"Column40\", type number}, {\"Column41\", type number}, {\"Column42\", type number}, {\"Column43\", type number}, {\"Column44\", type number}, {\"Column45\", type number}, {\"Column46\", type number}, {\"Column47\", type number}, {\"Column48\", type number}, {\"Column49\", type number}, {\"Column50\", type number}, {\"Column51\", type number}, {\"Column52\", type number}, {\"Column53\", type number}, {\"Column54\", type number}, {\"Column55\", type number}, {\"Column56\", type number}, {\"Column57\", type number}, {\"Column58\", type number}, {\"Column59\", type number}, {\"Column60\", type number}, {\"Column61\", type number}, {\"Column62\", type number}, {\"Column63\", type number}, {\"Column64\", type number}, {\"Column65\", type number}, {\"Column66\", type number}, {\"Column67\", type number}, {\"Column68\", type number}, {\"Column69\", type number}, {\"Column70\", type number}, {\"Column71\", type number}, {\"Column72\", type number}, {\"Column73\", type number}, {\"Column74\", type number}, {\"Column75\", type number}, {\"Column76\", type number}, {\"Column77\", type number}, {\"Column78\", type number}, {\"Column79\", type number}, {\"Column80\", type number}, {\"Column81\", type number}, {\"Column82\", type number}, {\"Column83\", type number}, {\"Column84\", type number}, {\"Column85\", type number}, {\"Column86\", type number}, {\"Column87\", type number}, {\"Column88\", type number}, {\"Column89\", type number}, {\"Column90\", type number}, {\"Column91\", type number}, {\"Column92\", type number}, {\"Column93\", type number}, {\"Column94\", type number}, {\"Column95\", type number}, {\"Column96\", type number}, {\"Column97\", type number}, {\"Column98\", type number}, {\"Column99\", type number}, {\"Column100\", type number}, {\"Column101\", type number}, {\"Column102\", type number}, {\"Column103\", type number}, {\"Column104\", type number}, {\"Column105\", type number}, {\"Column106\", type number}, {\"Column107\", type number}, {\"Column108\", type number}, {\"Column109\", type number}, {\"Column110\", type number}, {\"Column111\", type number}, {\"Column112\", type number}, {\"Column113\", type number}, {\"Column114\", type number}, {\"Column115\", type number}, {\"Column116\", type number}, {\"Column117\", type number}, {\"Column118\", type number}, {\"Column119\", type number}, {\"Column120\", type number}, {\"Column121\", type number}, {\"Column122\", type number}, {\"Column123\", type number}, {\"Column124\", type number}, {\"Column125\", type number}, {\"Column126\", type number}, {\"Column127\", type number}, {\"Column128\", type number}, {\"Column129\", type number}, {\"Column130\", type number}, {\"Column131\", type number}, {\"Column132\", type number}, {\"Column133\", type number}, {\"Column134\", type number}, {\"Column135\", type number}, {\"Column136\", type number}, {\"Column137\", type number}, {\"Column138\", type number}, {\"Column139\", type number}, {\"Column140\", type number}, {\"Column141\", type number}, {\"Column142\", type number}, {\"Column143\", type number}, {\"Column144\", type number}, {\"Column145\", type number}, {\"Column146\", type number}, {\"Column147\", type number}, {\"Column148\", type number}, {\"Column149\", type number}, {\"Column150\", type number}, {\"Column151\", type number}, {\"Column152\", type number}, {\"Column153\", type number}, {\"Column154\", type number}, {\"Column155\", type number}, {\"Column156\", type number}, {\"Column157\", type number}, {\"Column158\", type number}, {\"Column159\", type number}, {\"Column160\", type number}, {\"Column161\", type number}, {\"Column162\", type number}, {\"Column163\", type number}, {\"Column164\", type number}, {\"Column165\", type number}, {\"Column166\", type number}, {\"Column167\", type number}, {\"Column168\", type number}, {\"Column169\", type number}, {\"Column170\", type number}, {\"Column171\", type number}, {\"Column172\", type number}, {\"Column173\", type number}, {\"Column174\", type number}, {\"Column175\", type number}, {\"Column176\", type number}, {\"Column177\", type number}, {\"Column178\", type number}, {\"Column179\", type number}, {\"Column180\", type number}, {\"Column181\", type number}, {\"Column182\", type number}, {\"Column183\", type number}, {\"Column184\", type number}, {\"Column185\", type number}, {\"Column186\", type number}, {\"Column187\", type number}, {\"Column188\", type number}, {\"Column189\", type number}, {\"Column190\", type number}, {\"Column191\", type number}, {\"Column192\", type number}, {\"Column193\", type number}, {\"Column194\", type number}, {\"Column195\", type number}, {\"Column196\", type number}, {\"Column197\", type number}, {\"Column198\", type number}, {\"Column199\", type number}, {\"Column200\", type number}, {\"Column201\", type number}, {\"Column202\", type number}, {\"Column203\", type number}, {\"Column204\", type number}, {\"Column205\", type number}, {\"Column206\", type number}, {\"Column207\", type number}, {\"Column208\", type number}, {\"Column209\", type number}, {\"Column210\", type number}, {\"Column211\", type number}, {\"Column212\", type number}, {\"Column213\", type number}, {\"Column214\", type number}, {\"Column215\", type number}, {\"Column216\", type number}, {\"Column217\", type number}, {\"Column218\", type number}, {\"Column219\", type number}, {\"Column220\", type number}}),\n    #\"Promoted Headers1\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),\n    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers1\",{{\"country\", type text}, {\"1800\", type number}, {\"1801\", type number}, {\"1802\", type number}, {\"1803\", type number}, {\"1804\", type number}, {\"1805\", type number}, {\"1806\", type number}, {\"1807\", type number}, {\"1808\", type number}, {\"1809\", type number}, {\"1810\", type number}, {\"1811\", type number}, {\"1812\", type number}, {\"1813\", type number}, {\"1814\", type number}, {\"1815\", type number}, {\"1816\", type number}, {\"1817\", type number}, {\"1818\", type number}, {\"1819\", type number}, {\"1820\", type number}, {\"1821\", type number}, {\"1822\", type number}, {\"1823\", type number}, {\"1824\", type number}, {\"1825\", type number}, {\"1826\", type number}, {\"1827\", type number}, {\"1828\", type number}, {\"1829\", type number}, {\"1830\", type number}, {\"1831\", type number}, {\"1832\", type number}, {\"1833\", type number}, {\"1834\", type number}, {\"1835\", type number}, {\"1836\", type number}, {\"1837\", type number}, {\"1838\", type number}, {\"1839\", type number}, {\"1840\", type number}, {\"1841\", type number}, {\"1842\", type number}, {\"1843\", type number}, {\"1844\", type number}, {\"1845\", type number}, {\"1846\", type number}, {\"1847\", type number}, {\"1848\", type number}, {\"1849\", type number}, {\"1850\", type number}, {\"1851\", type number}, {\"1852\", type number}, {\"1853\", type number}, {\"1854\", type number}, {\"1855\", type number}, {\"1856\", type number}, {\"1857\", type number}, {\"1858\", type number}, {\"1859\", type number}, {\"1860\", type number}, {\"1861\", type number}, {\"1862\", type number}, {\"1863\", type number}, {\"1864\", type number}, {\"1865\", type number}, {\"1866\", type number}, {\"1867\", type number}, {\"1868\", type number}, {\"1869\", type number}, {\"1870\", type number}, {\"1871\", type number}, {\"1872\", type number}, {\"1873\", type number}, {\"1874\", type number}, {\"1875\", type number}, {\"1876\", type number}, {\"1877\", type number}, {\"1878\", type number}, {\"1879\", type number}, {\"1880\", type number}, {\"1881\", type number}, {\"1882\", type number}, {\"1883\", type number}, {\"1884\", type number}, {\"1885\", type number}, {\"1886\", type number}, {\"1887\", type number}, {\"1888\", type number}, {\"1889\", type number}, {\"1890\", type number}, {\"1891\", type number}, {\"1892\", type number}, {\"1893\", type number}, {\"1894\", type number}, {\"1895\", type number}, {\"1896\", type number}, {\"1897\", type number}, {\"1898\", type number}, {\"1899\", type number}, {\"1900\", type number}, {\"1901\", type number}, {\"1902\", type number}, {\"1903\", type number}, {\"1904\", type number}, {\"1905\", type number}, {\"1906\", type number}, {\"1907\", type number}, {\"1908\", type number}, {\"1909\", type number}, {\"1910\", type number}, {\"1911\", type number}, {\"1912\", type number}, {\"1913\", type number}, {\"1914\", type number}, {\"1915\", type number}, {\"1916\", type number}, {\"1917\", type number}, {\"1918\", type number}, {\"1919\", type number}, {\"1920\", type number}, {\"1921\", type number}, {\"1922\", type number}, {\"1923\", type number}, {\"1924\", type number}, {\"1925\", type number}, {\"1926\", type number}, {\"1927\", type number}, {\"1928\", type number}, {\"1929\", type number}, {\"1930\", type number}, {\"1931\", type number}, {\"1932\", type number}, {\"1933\", type number}, {\"1934\", type number}, {\"1935\", type number}, {\"1936\", type number}, {\"1937\", type number}, {\"1938\", type number}, {\"1939\", type number}, {\"1940\", type number}, {\"1941\", type number}, {\"1942\", type number}, {\"1943\", type number}, {\"1944\", type number}, {\"1945\", type number}, {\"1946\", type number}, {\"1947\", type number}, {\"1948\", type number}, {\"1949\", type number}, {\"1950\", type number}, {\"1951\", type number}, {\"1952\", type number}, {\"1953\", type number}, {\"1954\", type number}, {\"1955\", type number}, {\"1956\", type number}, {\"1957\", type number}, {\"1958\", type number}, {\"1959\", type number}, {\"1960\", type number}, {\"1961\", type number}, {\"1962\", type number}, {\"1963\", type number}, {\"1964\", type number}, {\"1965\", type number}, {\"1966\", type number}, {\"1967\", type number}, {\"1968\", type number}, {\"1969\", type number}, {\"1970\", type number}, {\"1971\", type number}, {\"1972\", type number}, {\"1973\", type number}, {\"1974\", type number}, {\"1975\", type number}, {\"1976\", type number}, {\"1977\", type number}, {\"1978\", type number}, {\"1979\", type number}, {\"1980\", type number}, {\"1981\", type number}, {\"1982\", type number}, {\"1983\", type number}, {\"1984\", type number}, {\"1985\", type number}, {\"1986\", type number}, {\"1987\", type number}, {\"1988\", type number}, {\"1989\", type number}, {\"1990\", type number}, {\"1991\", type number}, {\"1992\", type number}, {\"1993\", type number}, {\"1994\", type number}, {\"1995\", type number}, {\"1996\", type number}, {\"1997\", type number}, {\"1998\", type number}, {\"1999\", type number}, {\"2000\", type number}, {\"2001\", type number}, {\"2002\", type number}, {\"2003\", type number}, {\"2004\", type number}, {\"2005\", type number}, {\"2006\", type number}, {\"2007\", type number}, {\"2008\", type number}, {\"2009\", type number}, {\"2010\", type number}, {\"2011\", type number}, {\"2012\", type number}, {\"2013\", type number}, {\"2014\", type number}, {\"2015\", type number}, {\"2016\", type number}, {\"2017\", type number}, {\"2018\", type number}}),\n    #\"Unpivoted Other Columns\" = Table.UnpivotOtherColumns(#\"Changed Type1\", {\"country\"}, \"Attribute\", \"Value\"),\n    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Unpivoted Other Columns\",{{\"Attribute\", Int64.Type}}),\n    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type2\",{{\"Attribute\", \"Year\"}, {\"Value\", \"Life Exp\"}})\nin\n    #\"Renamed Columns\""
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh",
+            "modifiedTime": "2021-04-15T19:33:08.066667"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2021-04-15T19:33:08.066667"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "b1bbf1b0-16c5-454a-b6a9-c3dc298963b6",
+        "toCardinality": "many",
+        "fromTable": "GDP Countries",
+        "fromColumn": "Country",
+        "toTable": "life_expectancy_years",
+        "toColumn": "country",
+        "crossFilteringBehavior": "bothDirections",
+        "state": "ready",
+        "modifiedTime": "2021-04-15T20:23:27.13",
+        "refreshedTime": "1699-12-31T00:00:00"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "modifiedTime": "2021-04-15T18:54:20.93",
+        "structureModifiedTime": "2021-04-15T18:54:20.93",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US",
+            "DynamicImprovement": "HighConfidence"
+          },
+          "contentType": "json",
+          "modifiedTime": "2021-04-15T18:54:20.933333"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.91.884.0 (21.03)",
+        "modifiedTime": "2021-04-15T18:55:09.01"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": {
+          "__powerbi-vcs-embedded-json__": [
+            "GDP Countries",
+            "life_expectancy_years"
+          ]
+        },
+        "modifiedTime": "2021-04-15T19:33:08.066667"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1",
+        "modifiedTime": "2021-04-15T19:01:13.81"
+      }
+    ]
+  }
+}
